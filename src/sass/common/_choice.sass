@@ -1,0 +1,165 @@
+.choice-section
+  background: url("./../img/bg/fire.png")
+  background-position: center top
+  background-repeat: no-repeat
+  background-size: 75%
+
+  +laptop
+    background-size: 100%
+
+  +tablets-min
+    background-size: 140%
+    background-position: center 20%
+
+  +phones
+    background-size: 150%
+
+.choice-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 50px
+
+.choice-title
+  font-weight: 700
+  font-size: rem(48px)
+  font-family: "ptsans_narrow", serif
+  margin-bottom: 22px
+  text-transform: uppercase
+  text-align: center
+  white-space: nowrap
+
+  +tablets
+    font-size: rem(40px)
+
+  +phones
+    font-size: rem(30px)
+
+.choice-desc
+  font-weight: 400
+  font-size: rem(22px)
+  font-family: "ptsans", serif
+  margin-bottom: 25px
+  text-align: center
+
+.choice-window
+  padding: rem(30px) rem(35px) rem(50px) rem(35px)
+  background: #fff
+  margin-bottom: 70px
+  border-radius: 5px
+
+  +laptop
+    padding: rem(30px) rem(30px) rem(40px) rem(30px)
+
+  +tablets
+    padding: rem(30px) rem(25px) rem(30px) rem(25px)
+
+  +phones
+    padding: rem(30px) rem(15px) rem(30px) rem(15px)
+    width: 100%
+
+.choice-window__title
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 40px
+
+  +phones
+    flex-direction: column
+    margin-bottom: 30px
+
+.choice-window__title-count
+  width: 60px
+  height: 60px
+  border-radius: 50%
+  background: #e5e5e5
+  position: relative
+  margin-right: 15px
+  order: 1
+
+  +phones
+    order: 2
+    margin-right: 0
+
+.title-count__num
+  color: #000
+  +vcenter
+  font-weight: 700
+  font-size: rem(30px)
+  font-family: "ptsans", serif
+
+.choice-window__title-text
+  font-weight: 700
+  text-transform: uppercase
+  font-size: rem(24px)
+  font-family: "ptsans", serif
+  color: #000
+  order: 2
+
+  +laptop
+    font-size: rem(22px)
+
+  +tablets
+    font-size: rem(20px)
+
+  +phones
+    margin-bottom: 20px
+    font-size: rem(18px)
+    order: 1
+
+.choice-window__btns
+  display: flex
+  justify-content: center
+
+.choice-button
+  padding: rem(30px) rem(50px)
+  background: #fc481a
+  cursor: pointer
+  border-radius: 5px
+  border: 0
+  margin-right: rem(20px)
+  font-weight: 700
+  font-size: rem(24px)
+  font-family: "ptsans", serif
+  overflow: hidden
+  color: #fff
+  text-transform: uppercase
+  +tr(.3s)
+  position: relative
+
+  +after
+    top: -40%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 400px
+    height: 150px
+    border-radius: 50%
+    background: linear-gradient(to top,
+    rgba(255, 255, 255, .35),
+    rgba(254, 216, 207, .25),
+    rgba(253, 162, 138, .05))
+
+    +laptop
+      top: -60%
+
+    +tablets
+      top: -90%
+      width: 350px
+
+  +last
+    margin-right: 0
+
+  +hv
+    background: #c9340c
+
+  +laptop
+    padding: rem(25px) rem(30px)
+    font-size: rem(22px)
+
+  +tablets
+    padding: rem(20px) rem(25px)
+    font-size: rem(20px)
+
+  +phones
+    padding: rem(25px) rem(20px)
+    font-size: rem(18px)

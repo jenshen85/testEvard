@@ -1,0 +1,103 @@
+.advan-section
+  background-image: url("./../img/bg/adv_bg.png")
+  background-position: center bottom
+  background-repeat: no-repeat
+  background-size: cover
+
+  +laptop
+    background-image: none
+
+.advan-container
+  display: flex
+  flex-direction: column
+
+.advan-title
+  font-weight: 700
+  font-size: rem(48px)
+  font-family: "ptsans_narrow", serif
+  text-transform: uppercase
+  text-align: center
+  padding: 60px 0px 40px
+
+  +tablets
+    font-size: rem(40px)
+
+  +phones
+    font-size: rem(30px)
+
+.advan-content
+  display: flex
+
+  +laptop
+    flex-direction: column
+
+.advan-content__img
+  flex-basis: 30%
+  order: 1
+
+  +laptop
+    order: 2
+    background: url("./../img/bg/adv_bg.png")
+    background-position: center bottom
+    background-repeat: no-repeat
+    background-size: cover
+
+.advan-content__img-ico
+  max-width: 100%
+
+  +laptop
+    left: 50%
+    transform: translateX(-50%)
+    position: relative
+    top: -40px
+
+.advan-content__main
+  flex-basis: 70%
+  order: 2
+
+  +laptop
+    order: 1
+    margin-bottom: 50px
+    flex-basis: 100%
+
+.advan-content__list
+  display: flex
+  flex-wrap: wrap
+  margin-left: -15px
+
+.advan-content__item
+  width: 33.3333%
+  margin-bottom: 15px
+  padding-left: 15px
+
+  +tablets-min
+    width: 50%
+
+  +phones
+    width: 100%
+
+.advan-content__item-cont
+  border-radius: 10px
+  overflow: hidden
+  width: 100%
+
+.advan-content__item-img
+  width: 100%
+  height: 170px
+
+.advan-content__item-ico
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.advan-content__item-desc
+  padding: 25px 0
+  background: #fff
+  color: #000
+  font-weight: 700
+  font-size: rem(16px)
+  font-family: "ptsans", serif
+
+.item-desc__row
+  text-align: center
+  white-space: nowrap

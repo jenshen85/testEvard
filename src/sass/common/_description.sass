@@ -1,0 +1,58 @@
+.container.desc-container
+  background: url("./../img/bg/girl2.png")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: #fff
+  border-radius: 15px
+  display: flex
+
+  +tablets
+    background-position: left
+
+  +tablets-min
+    background-image: none
+
+.desc-content
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  color: #000000
+  padding: 35px 0 40px 40px
+  width: 60%
+  
+  +tablets
+    padding: 35px 0 40px 20px
+    width: 75%
+
+  +tablets-min
+    padding: 35px 0 40px 10px
+    width: 100%
+
+.desc-title
+  font-weight: 700
+  font-size: rem(48px)
+  font-family: "ptsans_narrow", serif
+  text-transform: uppercase
+  margin-bottom: 20px
+
+  +tablets
+    font-size: rem(40px)
+
+  +phones
+    font-size: rem(30px)
+
+.desc-main
+  font-weight: 400
+  font-size: rem(17px)
+  font-family: "ptsans", serif
+
+.desc-main--bold
+  text-transform: uppercase
+  font-weight: 700
+
+.desc-container__bg
+  height: 100%
+
+.desc-container__bg-img
+  height: 100%
